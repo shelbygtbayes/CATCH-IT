@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/Gray"
+    android:orientation="vertical"
+    android:layout_weight="5"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Edit Your Task Here !"
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:layout_weight="1"
+         />
+
+    <com.example.catchit.LinedEditText
+        android:id="@+id/edit"
+        android:background="@color/Yellow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:paddingLeft="8dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:textColor="@color/White"
+        android:imeOptions="flagNoExtractUi"
+        tools:layout_editor_absoluteX="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:layout_weight="1"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/colorAccent"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:textColor="@color/White" />
+    </LinearLayout>
+</LinearLayout>
